@@ -101,6 +101,9 @@ And so we have established the connection within mage from our VM.
 
 ## ETL Orchestration
 
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/ed3ee179-7db3-408b-bb99-ac6ed97040e1)
+
+
 + Extract
 We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe to be pulled from the bucket into this mage instance.
 

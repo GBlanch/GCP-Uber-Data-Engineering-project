@@ -51,6 +51,9 @@ NB: Tables such as `passenger count ` or  `trip distance` would suit better to b
 ![Uber DE model](https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8)
 
 
+
+So now we’re ready to perform all the cleaning and transformation work before we deploy this code into Mage. The script with its explanation to the development of this code can be read [here.](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb)
+
 ## Data Storage
 
 ## ETL Orchestration
@@ -61,4 +64,5 @@ NB: Tables such as `passenger count ` or  `trip distance` would suit better to b
 
 
 
+[Uploading Uber DE Transform and Model (LM).ipynb…]()
 

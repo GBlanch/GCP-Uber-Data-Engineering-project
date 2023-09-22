@@ -36,6 +36,8 @@ Once the data is exported, we can start querying the data we want to display int
 
 Finally, Looker Studio will allow us to create some dashboards according to the queries we have prepared before.
 
+[Back to Table of Contents](#table-of-contents)
+
 
 
 

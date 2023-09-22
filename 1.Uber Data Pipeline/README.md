@@ -63,9 +63,9 @@ So now we’re ready to perform all the `cleaning and transformation` work befor
 
 Before we store our data flat file into our Cloud Storage, we have to create our Project and Bucket in GCS.
 
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/a3802e5c-29ab-49e6-a1b9-76b2032c100d=150x50"  width="60%" height="40%">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/a3802e5c-29ab-49e6-a1b9-76b2032c100d=150x50"  width="60%" height="50%">
 
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/1967e5d9-6c86-4c0b-9c61-2908d776c0e5"  width="60%" height="40%">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/1967e5d9-6c86-4c0b-9c61-2908d776c0e5"  width="60%" height="50%">
 
 
 Once the object is uploaded, in the Permissions tab, we edit access control from `Uniform` to `Fine-grained`. 

@@ -77,7 +77,7 @@ Once the object is uploaded, in the Permissions tab, we edit access control from
 Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the Computer Engine. To do that, we have to create an instance from within it. We need to select the nearest region again, the series and type of our VM as well:
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/f1ba30ed-382b-4961-a591-aea442f408e4"  width="70%" height="60%">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/f1ba30ed-382b-4961-a591-aea442f408e4"  width="40%" height="40%">
 
 On the firewall section, we must allow HTTP and HTTPS traffic so that we can access it once we deploy our code.
 Once the instance is created, to connect to it we just need to directly run the SSH-in-browser without the requisite of downloading any SSH keys.
@@ -97,9 +97,11 @@ Then we set up Mage in our virtual machine and start our project:
 
 We can see at the last line that it is running on the indicated local host 6789. To allow our instance to accept requests from this mentioned port, we need to create a new Firewall Rule :
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/7e53f9ba-96ad-41db-afc4-ffbc468c5348)
+<p align="center">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/7e53f9ba-96ad-41db-afc4-ffbc468c5348"  width="70%" height="60%">
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/e1cb880c-1fd8-49a4-a609-3f566af24904)
+<p align="center">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/e1cb880c-1fd8-49a4-a609-3f566af24904"  width="70%" height="60%">
 
 And so we have established the connection within mage from our VM.
 
@@ -107,7 +109,8 @@ And so we have established the connection within mage from our VM.
 
 ## ETL Orchestration
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/ed3ee179-7db3-408b-bb99-ac6ed97040e1)
+<p align="center">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/ed3ee179-7db3-408b-bb99-ac6ed97040e1"  width="70%" height="60%">
 
 
 + Extract

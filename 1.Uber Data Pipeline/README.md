@@ -32,7 +32,7 @@ After this, we can store our data flat file in our Cloud Storage and also start 
 
 Next, we will be ready to deploy this code into our open-source data pipeline tool Mage. After we’ve created the main ETL bash pipeline in Mage, we will orchestrate it using our IaaS Computer Engine (VM) so that it can be exported into our data warehouse BigQuery.
 
-Once the data is exported, we can start querying the data we want to display into our reports/dashboards further on.
+Once the data is exported, we can start querying the parameters and variables we want to display into our reports/dashboards further on.
 
 Finally, Looker Studio will allow us to create some dashboards according to the queries we have prepared before.
 

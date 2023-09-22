@@ -119,10 +119,11 @@ We pass the URL stored in our bucket so that it directly extracts data from ther
 + Transform: [`uber_transform.py`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/orchestration/bash%20pipeline/uber_transform.py)
 We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
 
-+ Load:[`uber_load.py`]()
++ Load:[`uber_load.py`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/orchestration/bash%20pipeline/uber_load.py)
 First off, we need to install the Google Cloud Service packages into our VM:
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/f5564d3a-58b4-488c-9fd4-587cdf64208a)
+<p align="center">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/f5564d3a-58b4-488c-9fd4-587cdf64208a"  width="40%" height="40%">
 
 Then we will need to create an access key so that we can pass the credentials into the default yaml file in the Load block. This key can be downloaded to our LM in json format from the API & Services section in our Google console.
   

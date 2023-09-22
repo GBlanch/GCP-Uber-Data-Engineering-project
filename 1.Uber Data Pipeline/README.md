@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Architecture of the Data Pipeline](#architecture-of-the-data-pipeline)
 - [Technologies utilized](#technologies-utilized)
-- [Data Cleaning and Transformation](#data-cleaning-and-transformation)
+- [Data Transformation and Modeling](#data-transformation-and-modeling)
 - [Data Storage and VM configuration](#data-storage-and-vm-configuration)
 - [ETL Orchestration](#etl-orchestration)
 - [Data Analysis](#data-analysis)
@@ -42,7 +42,7 @@ Finally, Looker Studio will allow us to create some dashboards according to the 
 
 [Back to Table of Contents](#table-of-contents)
 
-## Data Cleaning and Transformation
+## Data Transformation and Modeling
 
 Once we’ve downloaded the csv file as mentioned above, we will need to convert our flat file into some fact and dimensional tables. The former ones will contain items with high cardinality or transaction values, whereas the latter ones will be assigned to merely descriptive values. More info on some concepts of dimensional data modeling can be found [here.]( https://www.ibm.com/docs/en/informix-servers/14.10?topic=model-concepts-dimensional-data-modeling
 )

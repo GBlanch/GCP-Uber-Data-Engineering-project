@@ -100,6 +100,22 @@ And so we have established the connection within mage from our VM.
 
 ## ETL Orchestration
 
++ Extract
+  We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe   to be pulled from the bucket to this mage instance.
+
++ Transform:
+  We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`]() we developed   in our LM previously using Jupyer Notebooks.
+
+  + Load:
+  First off, we need to install the Google Cloud Service packages into our VM:
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/f5564d3a-58b4-488c-9fd4-587cdf64208a)
+
+  Then we will need to create an access key so that we can pass the credentials into the default yaml file in the Load     block. This key can be downloaded to our LM in json format from the API & Services section in our Google console.
+  Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
+
+
+
 [Back to Table of Contents](#table-of-contents)
 
 ## Data Analysis

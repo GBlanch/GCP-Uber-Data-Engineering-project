@@ -14,7 +14,7 @@
 
 ## Introduction
 
-The main purpose of this project is to detail the core stages of an end-to-end pipeline Data Engineering project on GCP. Therefore, many of the aspects regarding Business Intelligence, Analytics and Dashboarding will be out of the scope of this project.
+The main purpose of this project is to detail the core stages of an end-to-end pipeline Data Engineering project on GCP. Therefore, many of the aspects regarding Business Intelligence, Analytics and Dashboarding will be out of the scope for this project.
 The structure of the architecture of this end-to-end data pipeline is detailed in the following section. 
 
 ## Architecture of the Data Pipeline
@@ -75,7 +75,7 @@ Then we go to the object and we add an entry within the `Edit Access` option so 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/f1ba30ed-382b-4961-a591-aea442f408e4)
 
 On the firewall section, we must allow HTTP and HTTPS traffic so that we can access it once we deploy our code.
-Once the instance is created, to connect to it we just need to directly run the SSH-in-browser without the requisite to download any SSH keys.
+Once the instance is created, to connect to it we just need to directly run the SSH-in-browser without the requisite of downloading any SSH keys.
 
 Once we’re connected to the virtual machine, we run some commands to set up the proper environment within it. These are:
 

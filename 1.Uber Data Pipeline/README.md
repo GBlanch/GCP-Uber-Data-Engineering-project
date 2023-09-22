@@ -21,7 +21,9 @@ The structure of the architecture of this end-to-end data pipeline is detailed i
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/9133fc2a-a684-4d97-9260-8792304b2838)
 
-The diagram above primarily shows the required stages once the raw data is gathered.\n The csv file can be obtained under request from NYC Taxi & Limousine Commission website. We could upload at the same time this flat file into Google Cloud Storage, but we rather do it once we have all our code ready to be deployed (we will be needing to configure our GCP settings further on)
+The diagram above primarily shows the required stages once the raw data is gathered.
+
+The csv file can be obtained under request from NYC Taxi & Limousine Commission website. We could upload at the same time this flat file into Google Cloud Storage, but we rather do it once we have all our code ready to be deployed (we will be needing to configure our GCP settings further on)
 Using the data catalogue provided in the website above - and prior to doing anything else -  we need to understand and design the data model structure to be adhered to within this project.
 Once the data modeling is done, we will perform the cleaning and transformation coding required to attain the desired data model. This stage will be performed using Python within Jupyter Notebooks, and it will all run in our LM.
 After this, we can store our data flat file in our Cloud Storage and also start setting up all the Google Cloud services to be used. 

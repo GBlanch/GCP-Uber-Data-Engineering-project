@@ -6,7 +6,7 @@
 - [Architecture of the Data Pipeline](#architecture-of-the-data-pipeline)
 - [Technologies utilized](#technologies-utilized)
 - [Data Cleaning and Transformation](#data-cleaning-and-transformation)
-- [Data Storage](#data-storage)
+- [Data Storage and VM configuration](#data-storage-and-vm-configuration)
 - [ETL Orchestration](#etl-orchestration)
 - [Data Analysis](#data-analysis)
 - [Dashboarding](#dashboarding)
@@ -58,7 +58,7 @@ So now we’re ready to perform all the `cleaning and transformation` work befor
 
 [Back to Table of Contents](#table-of-contents)
 
-## Data Storage
+## Data Storage and VM configuration
 
 Before we store our data flat file into our Cloud Storage, we have to create our Project and Bucket in GCS.
 

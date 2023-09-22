@@ -128,9 +128,10 @@ And so we have established the connection within mage from our VM.
 <p align="center">
 <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/f5564d3a-58b4-488c-9fd4-587cdf64208a"  width="40%" height="40%">
 
-  Then we will need to create an access key so that we can pass the credentials into the default yaml file in the Load block. This key can be downloaded to our LM in json format from the API & Services section   in our Google console.
+    Then we will need to create an access key so that we can pass the credentials into the default yaml file in the Load block. This key can be downloaded to our LM in json format from the API & Services   
+    section   in our Google console.
   
-  Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to        acknowledge the destination  of these.
+    Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to        acknowledge the destination  of these.
 
 
 

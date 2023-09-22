@@ -4,12 +4,12 @@
 
 - [Introduction](#introduction)
 - [Architecture of the Data Pipeline](#architecture-of-the-data-pipeline)
-- [Technologies utilized]()
-- [Data Cleaning and Transformation()
-- [Data Storage]()
-- [ETL Orchestration]()
-- [Data Analysis]()
-- [Dashboarding]()
+- [Technologies utilized](#technologies-utilized)
+- [Data Cleaning and Transformation](#data-cleaning-and-transformation)
+- [Data Storage](#data-storage)
+- [ETL Orchestration](#etl-orchestration)
+- [Data Analysis](#data-analysis)
+- [Dashboarding](#dashboarding)
 
 
 ## Introduction
@@ -37,6 +37,8 @@ Once the data is exported, we can start querying the data we want to display int
 Finally, Looker Studio will allow us to create some dashboards according to the queries we have prepared before.
 
 [Back to Table of Contents](#table-of-contents)
+
+## Technologies utilized
 
 
 

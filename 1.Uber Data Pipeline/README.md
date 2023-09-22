@@ -40,6 +40,16 @@ Finally, Looker Studio will allow us to create some dashboards according to the 
 
 ## Technologies utilized
 
+## Data Cleaning and Transformation
+
+## Data Storage
+
+## ETL Orchestration
+
+## Data Analysis
+
+## Dashboarding
+
 
 
 

@@ -64,6 +64,37 @@ Before we store our data flat file into our Cloud Storage, we have to create our
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/a3802e5c-29ab-49e6-a1b9-76b2032c100d)
 
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/1967e5d9-6c86-4c0b-9c61-2908d776c0e5)
+
+Once the object is uploaded, in the Permissions tab, we edit access control from `Uniform` to `Fine-grained`. 
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/fb50cce6-381d-4735-a074-b424e8a8582b)
+
+Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the Computer Engine. To do that, we have to create an instance from within it. We need to select the nearest region again, the series and type of our VM as well:
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/f1ba30ed-382b-4961-a591-aea442f408e4)
+
+On the firewall section, we must allow HTTP and HTTPS traffic so that we can access it once we deploy our code.
+Once the instance is created, to connect to it we just need to directly run the SSH-in-browser without the requisite to download any SSH keys.
+
+Once we’re connected to the virtual machine, we run some commands to set up the proper environment within it. These are:
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/530f6cd1-1678-407b-9136-a01aa97cf04d)
+
+Then we set up Mage in our virtual machine and start our project:
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/e999c1cc-9428-48d3-97b9-7aa581faea7d)
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/7473b1e4-c5de-4c3f-bfa4-94bf5e69e042)
+
+
+We can see at the 3rd line from the bottom that it is running on the indicated local host 6789. To allow our instance to accept requests from this mentioned port, we need to create a new Firewall Rule :
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/7e53f9ba-96ad-41db-afc4-ffbc468c5348)
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/e1cb880c-1fd8-49a4-a609-3f566af24904)
+
+And so we have established the connection within mage from our VM.
 
 [Back to Table of Contents](#table-of-contents)
 

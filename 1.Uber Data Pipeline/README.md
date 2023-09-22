@@ -60,6 +60,11 @@ So now we’re ready to perform all the `cleaning and transformation` work befor
 
 ## Data Storage
 
+Before we store our data flat file into our Cloud Storage, we have to create our Project and Bucket in GCS.
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/a3802e5c-29ab-49e6-a1b9-76b2032c100d)
+
+
 [Back to Table of Contents](#table-of-contents)
 
 ## ETL Orchestration

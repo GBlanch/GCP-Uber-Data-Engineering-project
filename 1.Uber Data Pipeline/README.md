@@ -26,7 +26,7 @@ The diagram above primarily shows the required stages once the raw data is gathe
 The csv file can be obtained under request from [NYC Taxi & Limousine Commission website](https://www.nyc.gov/site/tlc/about/request-data.page). We could upload at the same time this flat file into Google Cloud Storage, but we rather do it once we have all our code ready to be deployed (we will be needing to configure our GCP settings further on)
 
 Using the data catalogue provided in the website above - and prior to doing anything else -  we need to understand and design the data model structure to be adhered to within this project.
-Once the data modeling is done, we will perform the cleaning and transformation coding required to attain the desired data model. This stage will be performed using Python within Jupyter Notebooks, and it will all run in our LM.
+Once the data modeling is done, we will perform the cleaning and transformation coding required to attain the desired data model. This stage will be performed using Python within Jupyter Notebooks, and it will all run be in our LM.
 
 After this, we can store our data flat file in our Cloud Storage and also start setting up all the Cloud services to be used. 
 
@@ -101,13 +101,13 @@ And so we have established the connection within mage from our VM.
 ## ETL Orchestration
 
 + Extract
-  We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe   to be pulled from the bucket to this mage instance.
+We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe   to be pulled from the bucket to this mage instance.
 
 + Transform:
-  We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
+We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
 
-  + Load:
-  First off, we need to install the Google Cloud Service packages into our VM:
++ Load:
+First off, we need to install the Google Cloud Service packages into our VM:
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/f5564d3a-58b4-488c-9fd4-587cdf64208a)
 

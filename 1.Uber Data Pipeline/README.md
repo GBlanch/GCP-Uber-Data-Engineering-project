@@ -42,6 +42,13 @@ Finally, Looker Studio will allow us to create some dashboards according to the 
 
 ## Data Cleaning and Transformation
 
+Once we’ve downloaded the csv file as mentioned above, we will need to convert our flat file into some fact and dimensional tables. The former ones will contain items with high cardinality or transaction values, whereas the latter ones will be assigned to merely descriptive values. More info on some concepts of dimensional data modeling can be found [here.]( https://www.ibm.com/docs/en/informix-servers/14.10?topic=model-concepts-dimensional-data-modeling
+)
+NB: Tables such as `passenger count ` or  `trip distance` would suit better to be created as fact tables - their values they keep varying- , but for the purpose on focusing on the ETL pipeline process we will create them as dimensional ones. The final diagram of the data model is
+
+https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/data%20model/Uber%20DE%20model.png
+
+
 ## Data Storage
 
 ## ETL Orchestration

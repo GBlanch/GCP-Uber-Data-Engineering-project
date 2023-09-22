@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1.[Introduction](#1.Introduction)
+1. [Introduction](#1.Introduction)
 2.	Architecture of the Data Pipeline
 3.	Technologies utilized
 4.	Data Cleaning and Transformation

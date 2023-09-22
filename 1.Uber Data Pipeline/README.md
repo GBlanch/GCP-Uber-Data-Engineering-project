@@ -93,7 +93,7 @@ Then we set up Mage in our virtual machine and start our project:
 <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/e999c1cc-9428-48d3-97b9-7aa581faea7d"  width="40%" height="40%">
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/7473b1e4-c5de-4c3f-bfa4-94bf5e69e042"  width="70%" height="60%">
+<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/7473b1e4-c5de-4c3f-bfa4-94bf5e69e042"  width="70%" height="70%">
 
 We can see at the last line that it is running on the indicated local host 6789. To allow our instance to accept requests from this mentioned port, we need to create a new Firewall Rule :
 

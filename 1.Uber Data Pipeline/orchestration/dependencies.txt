@@ -1,0 +1,37 @@
+
+# Update os version and install latest files
+
+	sudo apt-get install update
+
+
+# Install required Python dependencies
+
+	sudo apt-get install python3-distutils
+
+	sudo apt-get install python3-apt
+
+	sudo apt-get install wget
+
+	wget https://bootstrap.pypa.io/get-pip.py
+
+	sudo python3 get-pip.py
+
+# Install Pandas
+
+	sudo pip3 install pandas
+
+
+#  Mage installation
+
+	sudo pip3 install mage-ai
+
+# Mage start
+	
+	mage start <name_of _the_project>	
+
+
+# Install Google Cloud Library
+
+	sudo pip3 install google-cloud
+
+	sudo pip3 install google-cloud-bigquery

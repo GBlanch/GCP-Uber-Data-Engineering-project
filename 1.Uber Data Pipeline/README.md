@@ -37,7 +37,7 @@ Once the data is exported, we can start querying the parameters and variables we
 
 Finally, Looker Studio will allow us to create some dashboards according to the queries we have prepared before.
 
-<p align="[Back to Table of Contents](#table-of-contents)">text</p>
+<p align="right">[Back to Table of Contents](#table-of-contents)</p> 
 
 ## Technologies utilized
 

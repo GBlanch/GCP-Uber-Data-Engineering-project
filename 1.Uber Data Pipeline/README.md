@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Architecture of the Data Pipeline](architecture-of-the-data-pipeline)
+- [Architecture of the Data Pipeline](#architecture-of-the-data-pipeline)
 - [Technologies utilized]()
 - [Data Cleaning and Transformation()
 - [Data Storage]()

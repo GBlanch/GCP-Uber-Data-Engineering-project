@@ -221,7 +221,7 @@ We notice that we mainly have joined innerly the fact table to the rest of the d
 
 After performing some quick work with Looker Studio, these are the dashboards we came up with:
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/158b6615-491f-4f7b-9c78-8c4601755456)
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/c9b58269-741e-4a14-b202-d61a76bdf94e)
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/63b2f374-6f77-4eb5-b0cd-d618cfa15151)
 

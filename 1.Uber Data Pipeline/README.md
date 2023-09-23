@@ -49,7 +49,7 @@ Once we’ve downloaded the csv file as mentioned above, we will need to convert
 )
 
 
-NB: Tables such as `passenger count ` or  `trip distance` would suit better to be created as fact tables - their values they keep varying- , but for the purpose on focusing on the ETL pipeline process we will create them as dimensional ones. The final diagram of the data model then is:
+NB: Tables such as `passenger count ` or  `trip distance` would suit better to be created as fact tables - their values they keep varying- , but for the purpose on focusing on the ETL pipeline process we will create them as dimensional ones. The final diagram of the data model then results:
 
 <p align="center">
 <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8"  width="70%" height="60%">

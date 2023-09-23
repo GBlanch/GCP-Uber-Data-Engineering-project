@@ -211,6 +211,9 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
     )
   ;
 ```
+
+We notice that we mailny have innerly joined the fact table to the rest of the dimensional tables as the [`data model`](https://www.ibm.com/docs/en/informix-servers/14.10?topic=model-concepts-dimensional-data-modeling) states.
+
 [Back to Table of Contents](#table-of-contents)
 
 ## Dashboarding

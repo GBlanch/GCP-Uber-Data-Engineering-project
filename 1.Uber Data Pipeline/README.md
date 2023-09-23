@@ -107,8 +107,13 @@ Once we’re connected to the virtual machine, we run some commands to set up th
 
 Then we set up Mage in our virtual machine and start our project:
 
-<p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/e999c1cc-9428-48d3-97b9-7aa581faea7d"  width="40%" height="40%">
+    #  Mage installation
+    
+    	sudo pip3 install mage-ai
+    
+    # Mage start
+    	
+    	mage start ude_project	
 
 <p align="center">
 <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/7473b1e4-c5de-4c3f-bfa4-94bf5e69e042" >

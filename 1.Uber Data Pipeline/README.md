@@ -193,22 +193,22 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
     f.total_amount
   FROM `uber-data-eng-19sep2023.uber_de_dataset.fact_table` f
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.datetime_dim` dt  
-    ON f.datetime_id=dt.datetime_id
+    ON f.datetime_id = dt.datetime_id
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.passenger_count_dim` pc  
-    ON pc.passenger_count_id=f.passenger_count_id  
+    ON pc.passenger_count_id = f.passenger_count_id  
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.trip_distance_dim` t  
-    ON t.trip_distance_id=f.trip_distance_id  
+    ON t.trip_distance_id = f.trip_distance_id  
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.rate_code_dim` r 
-    ON r.rate_code_id=f.rate_code_id  
+    ON r.rate_code_id = f.rate_code_id  
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.pickup_location_dim` p 
-    ON p.pickup_location_id=f.pickup_location_id
+    ON p.pickup_location_id = f.pickup_location_id
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.dropoff_location_dim` d 
-    ON d.dropoff_location_id=f.dropoff_location_id
+    ON d.dropoff_location_id = f.dropoff_location_id
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.payment_type_dim` pay 
-    ON pay.payment_type_id=f.payment_type_id
+    ON pay.payment_type_id = f.payment_type_id
     )
   ;
-
+```
 [Back to Table of Contents](#table-of-contents)
 
 ## Dashboarding
@@ -216,6 +216,6 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
 After performing some quick work with Looker Studio, these are the dashboards we came up with
 
 [Back to Table of Contents](#table-of-contents)
-```
+
 
 

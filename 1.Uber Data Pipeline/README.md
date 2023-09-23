@@ -219,7 +219,18 @@ We notice that we mainly have joined innerly the fact table to the rest of the d
 
 ## Dashboarding
 
-After performing some quick work with Looker Studio, these are the dashboards we came up with
+After performing some quick work with Looker Studio, these are the dashboards we came up with:
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/651003c9-b070-49ff-8d75-f5ab04c93c6c)
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/172e39b3-6e97-4a88-89d2-2cc70597b0e0)
+
+![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/ca9504ff-6244-433b-91df-6ea40c87490f)
+
+
+
+
+
 
 [Back to Table of Contents](#table-of-contents)
 

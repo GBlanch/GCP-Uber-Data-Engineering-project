@@ -161,7 +161,7 @@ And so we have established the connection within mage from our VM.
   
   Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
 
-Once the pipeline is successfully executed, we can check the completion of the data loading into the data warehouse BigQuery 
+Once the pipeline is successfully executed, we can check the location of these dataframes into the data warehouse BigQuery:
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/a78b369c-bb25-4c90-973f-830dbc05bc0e)
 

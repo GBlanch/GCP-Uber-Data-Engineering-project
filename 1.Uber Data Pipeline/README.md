@@ -212,7 +212,7 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
   ;
 ```
 
-We notice that we mailny have innerly joined the fact table to the rest of the dimensional tables as the [`data model`](https://www.ibm.com/docs/en/informix-servers/14.10?topic=model-concepts-dimensional-data-modeling) states.
+We notice that we mailny have innerly joined the fact table to the rest of the dimensional tables as the [`data model`](https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8) states.
 
 [Back to Table of Contents](#table-of-contents)
 

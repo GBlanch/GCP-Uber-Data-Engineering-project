@@ -188,7 +188,6 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
     pay.payment_type_name,
     f.fare_amount,
     f.extra,
-    f.mta_tax,
     f.tip_amount,
     f.tolls_amount,
     f.improvement_surcharge,

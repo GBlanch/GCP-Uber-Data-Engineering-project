@@ -124,8 +124,6 @@ And so we have established the connection within mage from our VM.
 + Load:[`uber_de_load.py`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/orchestration/bash%20pipeline/uber_de_load.py)
   
   First off, we need to install the Google Cloud Service packages into our VM:
-  <p align="center">
-  <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/f5564d3a-58b4-488c-9fd4-587cdf64208a"  width="40%" height="40%">
 
       # Install Google Cloud Library
     

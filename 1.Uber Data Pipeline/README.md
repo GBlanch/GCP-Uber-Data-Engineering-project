@@ -159,18 +159,63 @@ And so we have established the connection within mage from our VM.
     Then we will need to create an access key so that we can pass the credentials into the default yaml file in the Load block. This key can be downloaded to our LM in json format from the API & Services   
   section   in our Google console.
   
-  Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to        acknowledge the destination  of these.
+  Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
 
 
 [Back to Table of Contents](#table-of-contents)
 
 ## Data Analysis
 
+Despite the Data Eng. work has been mostly finalized, we proceed to perform some Data Analysis. 
+For doing this, we will only pull the columns we want to include in our dashboards by creating specific queries:
+
+```SQL 
+CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table` AS (
+  SELECT 
+    f.trip_id,
+    f.VendorID,
+    dt.tpep_pickup_datetime,
+    dt.tpep_dropoff_datetime,
+    pc.passenger_count,
+    t.trip_distance,
+    r.rate_code_name,
+    p.pickup_latitude,
+    p.pickup_longitude,
+    d.dropoff_latitude,
+    d.dropoff_longitude,
+    pay.payment_type_name,
+    f.fare_amount,
+    f.extra,
+    f.mta_tax,
+    f.tip_amount,
+    f.tolls_amount,
+    f.improvement_surcharge,
+    f.total_amount
+  FROM `uber-data-eng-19sep2023.uber_de_dataset.fact_table` f
+  JOIN `uber-data-eng-19sep2023.uber_de_dataset.datetime_dim` dt  
+    ON f.datetime_id=dt.datetime_id
+  JOIN `uber-data-eng-19sep2023.uber_de_dataset.passenger_count_dim` pc  
+    ON pc.passenger_count_id=f.passenger_count_id  
+  JOIN `uber-data-eng-19sep2023.uber_de_dataset.trip_distance_dim` t  
+    ON t.trip_distance_id=f.trip_distance_id  
+  JOIN `uber-data-eng-19sep2023.uber_de_dataset.rate_code_dim` r 
+    ON r.rate_code_id=f.rate_code_id  
+  JOIN `uber-data-eng-19sep2023.uber_de_dataset.pickup_location_dim` p 
+    ON p.pickup_location_id=f.pickup_location_id
+  JOIN `uber-data-eng-19sep2023.uber_de_dataset.dropoff_location_dim` d 
+    ON d.dropoff_location_id=f.dropoff_location_id
+  JOIN `uber-data-eng-19sep2023.uber_de_dataset.payment_type_dim` pay 
+    ON pay.payment_type_id=f.payment_type_id
+    )
+  ;
+
 [Back to Table of Contents](#table-of-contents)
 
 ## Dashboarding
 
-[Back to Table of Contents](#table-of-contents)
+After performing some quick work with Looker Studio, these are the dashboards we came up with
 
+[Back to Table of Contents](#table-of-contents)
+```
 
 

@@ -167,7 +167,9 @@ And so we have established the connection within mage from our VM.
 ## Data Analysis
 
 Despite the Data Eng. work has been mostly finalized, we proceed to perform some Data Analysis. 
-For doing this, we will only pull the columns we want to include in our dashboards by creating specific queries:
+For doing this, we will only pull the columns we want to include in our dashboards by creating specific queries. 
+
+Hence, our new table or 'analytical layer' from which we will build our dashboard is the following:
 
 ```SQL 
 CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table` AS (

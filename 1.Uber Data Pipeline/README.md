@@ -190,7 +190,6 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
     f.extra,
     f.tip_amount,
     f.tolls_amount,
-    f.improvement_surcharge,
     f.total_amount
   FROM `uber-data-eng-19sep2023.uber_de_dataset.fact_table` f
   JOIN `uber-data-eng-19sep2023.uber_de_dataset.datetime_dim` dt  

@@ -84,8 +84,26 @@ Once the instance is created, to connect to it we just need to directly run the 
 
 Once we’re connected to the virtual machine, we run some commands to set up the proper environment within it. These are:
 
-<p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/530f6cd1-1678-407b-9136-a01aa97cf04d"  width="40%" height="40%">
+    # Update os version and install latest files
+    
+    	sudo apt-get install update
+    
+    
+    # Install required Python dependencies
+    
+    	sudo apt-get install python3-distutils
+    
+    	sudo apt-get install python3-apt
+    
+    	sudo apt-get install wget
+    
+    	wget https://bootstrap.pypa.io/get-pip.py
+    
+    	sudo python3 get-pip.py
+    
+    # Install Pandas
+    
+    	sudo pip3 install pandas
 
 Then we set up Mage in our virtual machine and start our project:
 

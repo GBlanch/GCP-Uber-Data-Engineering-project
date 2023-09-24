@@ -14,7 +14,7 @@
 
 ## Introduction
 
-The main purpose of this project is to detail the core stages of an end-to-end pipeline Data Engineering project on GCP. Therefore, many of the aspects regarding Business Intelligence, Analytics and Dashboarding will be out of the scope for this project.
+The main purpose of this project is to detail the core stages of an end-to-end pipeline Data Engineering project. Therefore, many of the aspects regarding Business Intelligence, Analytics and Dashboarding will be out of the scope for this project.
 
 The structure of the architecture of this end-to-end data pipeline is detailed in the following section. 
 
@@ -24,7 +24,7 @@ The structure of the architecture of this end-to-end data pipeline is detailed i
 
 The diagram above primarily shows the required stages once the raw data is gathered.
 
-The csv file can be obtained under request from [NYC Taxi & Limousine Commission website](https://www.nyc.gov/site/tlc/about/request-data.page). We could upload at the same time this flat file into Google Cloud Storage, but we rather do it once we have all our code ready to be deployed (we will be needing to configure our GCP settings further on)
+The csv file can be obtained under request from [NYC Taxi & Limousine Commission website](https://www.nyc.gov/site/tlc/about/request-data.page). We could upload at the same time this flat file into Google Cloud Storage, but we rather do it once we have all our code ready to be deployed (we will be needing to configure our Google Cloud Platform settings further on)
 
 Using the data catalogue provided in the website above - and prior to doing anything else -  we need to understand and design the data model structure to be adhered to within this project.
 Once the data modeling is done, we will perform the cleaning and transformation coding required to attain the desired data model. This stage will be performed using Python within Jupyter Notebooks, and it will all run be in our LM.

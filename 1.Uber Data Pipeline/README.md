@@ -104,7 +104,7 @@ Then we go to the object and we add an entry within the `Edit Access` option so 
 On the firewall section, we must allow HTTP and HTTPS traffic so that we can access it once we deploy our code.
 Once the instance is created, to connect to it we just need to directly run the SSH-in-browser without the requisite of downloading any SSH keys.
 
-Once we’re connected to the virtual machine, we run some commands to set up the proper environment within it. These are:
+Once we’re connected to the virtual machine, we run some bash commands to set up the proper environment within it. These are:
 
     # Update os version and install latest files
     

@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Architecture of the Data Pipeline](#architecture-of-the-data-pipeline)
-- [Code and Services utilized](#technologies-utilized)
+- [Code and Services utilized](#code-and-services-utilized)
 - [Data Transformation and Modeling](#data-transformation-and-modeling)
 - [Data Storage and VM configuration](#data-storage-and-vm-configuration)
 - [ETL Orchestration](#etl-orchestration)
@@ -59,7 +59,7 @@ We will also employ some `bash` code mostly to install some libraries and depenc
 + Analytics : `BigQuery`
 + Dashboarding :  `Looker Studio`  
 
-For orchestrating the ETL process, we will use [`Mage`] as an open-source, hybrid framework for transforming and integrating our dataframes.
+For orchestrating the ETL process, we will use `Mage` as an open-source, hybrid framework for transforming and integrating our dataframes.
 
 [Back to Table of Contents](#table-of-contents)
 

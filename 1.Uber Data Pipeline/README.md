@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Architecture of the Data Pipeline](#architecture-of-the-data-pipeline)
-- [Technologies utilized](#technologies-utilized)
+- [Code and Services utilized](#technologies-utilized)
 - [Data Transformation and Modeling](#data-transformation-and-modeling)
 - [Data Storage and VM configuration](#data-storage-and-vm-configuration)
 - [ETL Orchestration](#etl-orchestration)
@@ -31,7 +31,7 @@ Once the data modeling is done, we will perform the cleaning and transformation 
 
 After this, we can store our data flat file in our Cloud Storage and also start setting up all the Cloud services to be used. 
 
-Next, we will be ready to deploy this code into our open-source data pipeline tool Mage. After we’ve created the main ETL bash pipeline in Mage, we will orchestrate it using our IaaS Computer Engine (VM). This will allow us to export our dataframes into our data warehouse in BigQuery.
+Next, we will be ready to deploy this code into our open-source data pipeline tool Mage. After we’ve created the main ETL batch pipeline in Mage, we will orchestrate it using our IaaS Computer Engine (VM). This will allow us to export our dataframes into our data warehouse in BigQuery.
 
 Once the data is exported, we can start querying the parameters and variables we want to display into our reports/dashboards further on.
 
@@ -39,7 +39,27 @@ Finally, Looker Studio will allow us to create some dashboards according to the 
 
 [Back to Table of Contents](#table-of-contents)
 
-## Technologies utilized
+## Code and Services utilized
+
+### Coding:
+
+We will use `Python` within Jupyer Notebook as computing platform to arrange our fact and dimensional tables according to our data model.
+`Python` also will be used to modify the ETL blocks/instances in the orchestration stage.
+
+Once the dataframes are deployed into our data warehouse, we are going to code in `SQL` to fetch the tables we requiere. Likewise, we will elaborate the queries to select the information we want to display in the final dashboards. 
+
+We will also employ some `bash` code mostly to install some libraries and depencencies in our Virtual Machine.
+
+### Services
+
+`Google Cloud Platform` will be the main source of cloud computing services for this project. These being:
+
++ Storage: `Cloud Storage`
++ Virtual Machine : `Computer Engine`
++ Analytics : `BigQuery`
++ Dashboarding :  `Looker Studio`  
+
+For orchestrating the ETL process, we will use [`Mage`] as an open-source, hybrid framework for transforming and integrating our dataframes.
 
 [Back to Table of Contents](#table-of-contents)
 

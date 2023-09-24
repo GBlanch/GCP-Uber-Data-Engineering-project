@@ -215,6 +215,9 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
 
 We notice that we mainly have joined innerly the fact table to the rest of the dimensional tables as the [`data model`](https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8) states.
 
+Again, the purpose of this project wasn't to construct many series of queries but to showcase the main stages of a data pipeline using GCP. 
+You can see more query developement in other repos like in one of the [`SQL-weekly-challenges`](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/query_develop/dev_query_4_31AUG23.sql) I elaborated.
+
 [Back to Table of Contents](#table-of-contents)
 
 ## Dashboarding

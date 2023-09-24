@@ -48,7 +48,7 @@ We will use `Python` within Jupyer Notebook as computing platform to arrange our
 
 Once the dataframes are deployed into our data warehouse, we are going to code in `SQL` to fetch the tables we requiere. Likewise, we will elaborate the queries to select the information we want to display in the final dashboards. 
 
-We will also employ some `bash` code mostly to install some libraries and depencencies in our Virtual Machine.
+We will also employ some `bash` code mostly to install some depencencies in our Virtual Machine and to run some commands from within.
 
 ### Services
 

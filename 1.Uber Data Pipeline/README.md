@@ -247,6 +247,8 @@ After performing some quick work with Looker Studio, these are the dashboards we
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/63b2f374-6f77-4eb5-b0cd-d618cfa15151)
 
+NB: Query for the `Average tip by trip distance` to be reviewed for their absolute values are too high.
+
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/ec42e1e0-2f3e-48db-a187-f24675e9f979)
 
 

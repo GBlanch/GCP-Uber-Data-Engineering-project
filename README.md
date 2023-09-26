@@ -1,4 +1,4 @@
-# AWS Uber Data Egineering project
+# GCP Uber Data Egineering project
 
 ## Table of Contents
 

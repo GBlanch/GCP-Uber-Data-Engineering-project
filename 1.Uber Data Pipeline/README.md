@@ -185,8 +185,37 @@ And so we have established the connection within mage from our VM.
   Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
 
 ```python
-number = input("What is your favourite number?")
-print("It is", number + 1)  # error: Unsupported operand types for + ("str" and "int")
+from mage_ai.settings.repo import get_repo_path
+from mage_ai.io.bigquery import BigQuery
+from mage_ai.io.config import ConfigFileLoader
+from pandas import DataFrame
+from os import path
+
+if 'data_exporter' not in globals():
+    from mage_ai.data_preparation.decorators import data_exporter
+
+
+@data_exporter
+def export_data_to_big_query(data, **kwargs) -> None:
+    """
+    Template for exporting data to a BigQuery warehouse.
+    Specify your configuration settings in 'io_config.yaml'.
+
+    Docs: https://docs.mage.ai/design/data-loading#bigquery
+
+    """
+
+    config_path = path.join(get_repo_path(), 'io_config.yaml')
+    config_profile = 'default'
+
+    for key, value in data.items():
+        table_id = 'uber-data-eng-19sep2023.uber_de_dataset.{}'.format(key)
+        BigQuery.with_config(ConfigFileLoader(config_path, 
+                                              config_profile)).export(
+        DataFrame(value),
+        table_id,
+        if_exists = 'replace',  # Specify resolution policy if table name already exists
+    )
 ```
 
 Once the pipeline is successfully executed, we can check the location of these dataframes into the data warehouse BigQuery:

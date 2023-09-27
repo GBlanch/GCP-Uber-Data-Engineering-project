@@ -163,6 +163,7 @@ And so we have established the connection within mage from our VM.
   View code here
   </summary>
 
+        ```python
         import io
         import pandas as pd
         import requests
@@ -188,6 +189,7 @@ And so we have established the connection within mage from our VM.
             Template code for testing the output of the block.
             """
             assert output is not None, 'The output is undefined'
+            ```
   
 We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe to be pulled from the bucket into this mage instance.
 

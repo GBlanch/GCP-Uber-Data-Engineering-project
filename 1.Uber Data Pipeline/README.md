@@ -159,17 +159,18 @@ And so we have established the connection within mage from our VM.
 
 + Extract: [`uber_de_extract.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_extract.py)
 
-  <summary>Tips for collapsed sections</summary>
+<summary>Tips for collapsed sections</summary>
 
-```python
-    import io
-    import pandas as pd
-    import requests
-    if 'data_loader' not in globals():
-    from mage_ai.data_preparation.decorators import data_loader
-    if 'test' not in globals():
-    from mage_ai.data_preparation.decorators import test
+### You can add a header
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
 ```
+
 </details>
   
 We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe to be pulled from the bucket into this mage instance.

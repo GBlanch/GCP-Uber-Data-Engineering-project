@@ -184,10 +184,10 @@ And so we have established the connection within mage from our VM.
   
   Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
 
-        ```python
-        number = input("What is your favourite number?")
-        print("It is", number + 1)  # error: Unsupported operand types for + ("str" and "int")
-        ```
+```python
+number = input("What is your favourite number?")
+print("It is", number + 1)  # error: Unsupported operand types for + ("str" and "int")
+```
 
 Once the pipeline is successfully executed, we can check the location of these dataframes into the data warehouse BigQuery:
 

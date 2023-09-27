@@ -158,8 +158,7 @@ And so we have established the connection within mage from our VM.
 
 
 + Extract: [`uber_de_extract.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_extract.py)
-    <details>
-    <summary>
+
         ```python
         print(Hello world)
         ```

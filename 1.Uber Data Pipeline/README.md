@@ -161,8 +161,7 @@ And so we have established the connection within mage from our VM.
   <details>
   <summary>
   View code here
-  </summary>
-  
+  </summary>  
 ```python
 import io
 import pandas as pd

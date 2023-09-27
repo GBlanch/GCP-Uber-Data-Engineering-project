@@ -169,8 +169,7 @@ And so we have established the connection within mage from our VM.
     if 'data_loader' not in globals():
     from mage_ai.data_preparation.decorators import data_loader
     if 'test' not in globals():
-    from mage_ai.data_preparation.decorators import test
-    ```
+    from mage_ai.data_preparation.decorators import test```
   
 We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe to be pulled from the bucket into this mage instance.
 

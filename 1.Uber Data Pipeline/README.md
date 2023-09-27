@@ -158,8 +158,11 @@ And so we have established the connection within mage from our VM.
 
 
 + Extract: [`uber_de_extract.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_extract.py)
-
-
+    <details>
+    <summary>
+        ```python
+        print(Hello world)
+        ```
     We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas 
     dataframe to be pulled from the bucket into this mage instance.
 

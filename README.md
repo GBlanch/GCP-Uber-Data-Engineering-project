@@ -45,12 +45,12 @@ Finally, Looker Studio will allow us to create some dashboards according to the 
 
 ### Coding:
 
-We will use `Python` within Jupyer Notebook as computing platform to arrange our fact and dimensional tables according to our data model.
+We will use `Python` within `Jupyer Notebook` as computing platform to arrange our fact and dimensional tables according to our data model.
 `Python` also will be used to modify the ETL blocks/instances in the orchestration stage.
 
 Once the dataframes are deployed into our data warehouse, we are going to code in `SQL` to fetch the tables we requiere. Likewise, we will elaborate the queries to select the information we want to display in the final dashboards. 
 
-We will also employ some `bash` code mostly to install some depencencies in our Virtual Machine and to run some commands from within.
+We will also employ some `bash` code mostly to install some depencencies in our `Virtual Machine` and to run some commands from within.
 
 ### Services
 
@@ -84,14 +84,14 @@ So now we’re ready to perform all the `cleaning and transformation` work befor
 
 ## Data Storage and VM configuration
 
-Before we store our data flat file into our Cloud Storage, we have to create our Project and Bucket in GCS.
+Before we store our object / data flat file into our Cloud Storage, we have to create our Project and Bucket in GCS.
 
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/e685b676-20df-47a2-935b-37959bf3d8e1"  width="70%" height="60%">
 
+Then we can store our object in this new bucket:
 
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/1967e5d9-6c86-4c0b-9c61-2908d776c0e5"  width="70%" height="60%">
-
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/42f5fe80-59a0-4edc-8eb9-5bd2590bbd91)
 
 Once the object is uploaded, in the `Permissions tab`, we edit access control from `Uniform` to `Fine-grained`. 
 

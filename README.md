@@ -101,6 +101,9 @@ Once the object is uploaded, in the `Permissions tab`, we edit access control fr
 
 Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the Computer Engine. To do that, we have to create an instance from within it. We need to select the nearest region again, the series and type of our VM as well:
 
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/fd808491-d4dd-41c5-808d-574824eb8fc3)
+
+
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/102b3c44-ce1b-497c-8ca0-8aa2ee8df190" width="70%" height="70%">
 

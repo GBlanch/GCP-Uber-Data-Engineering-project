@@ -161,7 +161,7 @@ And so we have established the connection within mage from our VM.
 ## ETL Orchestration
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/ed3ee179-7db3-408b-bb99-ac6ed97040e1" >
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/ee2c157a-234b-4179-8752-6250f6b9255f" >
 
 
 + Extract: [`uber_de_extract.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_extract.py)

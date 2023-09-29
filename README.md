@@ -20,7 +20,9 @@ The structure of the architecture of this end-to-end data pipeline is detailed i
 
 ## Architecture of the Data Pipeline
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/9133fc2a-a684-4d97-9260-8792304b2838)
+
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/f2e66f07-4ea1-4f77-83e0-2dde5056d9bc)
+
 
 The diagram above primarily shows the required stages once the raw data is gathered.
 
@@ -65,7 +67,7 @@ For orchestrating the ETL process, we will use `Mage` as an open-source, hybrid 
 
 ## Data Transformation and Modeling
 
-Once we’ve downloaded the csv file as mentioned above, we will need to convert our flat file into some fact and dimensional tables. The former ones will contain items with high cardinality or transaction values, whereas the latter ones will be assigned to merely descriptive values. More info on some concepts of dimensional data modeling can be found [here.](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb)
+Once we’ve downloaded the csv file as mentioned above, we will need to convert our flat file into some fact and dimensional tables. The former ones will contain items with high cardinality or transaction values, whereas the latter ones will be assigned to merely descriptive values. More info on some concepts of dimensional data modeling can be found [here.](https://www.ibm.com/docs/en/informix-servers/14.10?topic=model-concepts-dimensional-data-modeling)
 
 
 NB: Tables such as `passenger count ` or  `trip distance` would suit better to be created as fact tables - their values they keep varying- , but for the purpose on focusing on the ETL pipeline process we will create them as dimensional ones. 
@@ -76,7 +78,7 @@ The final diagram of the data model then results:
 <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8"  width="70%" height="60%">
 
 
-So now we’re ready to perform all the `cleaning and transformation` work before we deploy this code into Mage. The script with its explanation to the development of this code can be read [`here.`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb)
+So now we’re ready to perform all the `cleaning and transformation` work before we deploy this code into Mage. The script with its explanation to the development of this code can be read [`here.`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb)
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -137,12 +139,14 @@ Then we set up Mage in our virtual machine and start our project:
     	mage start ude_project	
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/7473b1e4-c5de-4c3f-bfa4-94bf5e69e042" >
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/6bc7d16f-6bd7-46ea-a140-7587914c1703" >
 
 We can see at the last line that it is running on the indicated local host 6789. To allow our instance to accept requests from this mentioned port, we need to create a new Firewall Rule :
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/7e53f9ba-96ad-41db-afc4-ffbc468c5348"  width="70%" height="60%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/190b752a-40bb-420a-a47d-eab7492d2929"  width="90%" height="90%">
+
+
 
 <p align="center">
 <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/e1cb880c-1fd8-49a4-a609-3f566af24904"  width="70%" height="60%">

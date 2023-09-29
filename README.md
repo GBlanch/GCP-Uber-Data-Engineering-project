@@ -149,9 +149,8 @@ We can see at the last line that it is running on the indicated local host 6789.
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/190b752a-40bb-420a-a47d-eab7492d2929"  width="90%" height="90%">
 
 
-
 <p align="center">
-<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/102b3c44-ce1b-497c-8ca0-8aa2ee8df190">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/f96304b4-7104-4833-a4ff-e9533b576308">
 
 
 And so we have established the connection within mage from our VM.

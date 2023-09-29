@@ -102,7 +102,7 @@ Once the object is uploaded, in the `Permissions tab`, we edit access control fr
 Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the Computer Engine. To do that, we have to create an instance from within it. We need to select the nearest region again, the series and type of our VM as well:
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/f1ba30ed-382b-4961-a591-aea442f408e4"  width="40%" height="40%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/102b3c44-ce1b-497c-8ca0-8aa2ee8df190" width="70%" height="70%">
 
 On the firewall section, we must allow HTTP and HTTPS traffic so that we can access it once we deploy our code.
 Once the instance is created, to connect to it we just need to directly run the SSH-in-browser without the requisite of downloading any SSH keys.

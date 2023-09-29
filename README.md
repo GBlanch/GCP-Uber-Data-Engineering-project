@@ -1,4 +1,4 @@
-# GCP Uber Data Egineering project
+# GCP Uber Data Engineering 
 
 ## Table of Contents
 
@@ -158,8 +158,37 @@ And so we have established the connection within mage from our VM.
 
 
 + Extract: [`uber_de_extract.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_extract.py)
-  
-  We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas dataframe to be pulled from the bucket into this mage instance.
+
+```python
+import io
+import pandas as pd
+import requests
+if 'data_loader' not in globals():
+    from mage_ai.data_preparation.decorators import data_loader
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+
+
+@data_loader
+def load_data_from_api(*args, **kwargs):
+    """
+    Template for loading data from API
+    """
+    url = 'https://storage.googleapis.com/uber_data_eng_bucket/uber_data.csv'
+    response = requests.get(url)
+
+    return pd.read_csv(io.StringIO(response.text), sep=',')
+
+
+@test
+def test_output(output, *args) -> None:
+    """
+    Template code for testing the output of the block.
+    """
+    assert output is not None, 'The output is undefined'
+ ```
+  We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas 
+  dataframe to be pulled from the bucket into this mage instance.
 
 + Transform: [`uber_de_transform.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_transform.py)
   
@@ -179,6 +208,40 @@ And so we have established the connection within mage from our VM.
     downloaded to our LM in json format from the API & Services section in our Google console.
   
   Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
+
+```python
+from mage_ai.settings.repo import get_repo_path
+from mage_ai.io.bigquery import BigQuery
+from mage_ai.io.config import ConfigFileLoader
+from pandas import DataFrame
+from os import path
+
+if 'data_exporter' not in globals():
+    from mage_ai.data_preparation.decorators import data_exporter
+
+
+@data_exporter
+def export_data_to_big_query(data, **kwargs) -> None:
+    """
+    Template for exporting data to a BigQuery warehouse.
+    Specify your configuration settings in 'io_config.yaml'.
+
+    Docs: https://docs.mage.ai/design/data-loading#bigquery
+
+    """
+
+    config_path = path.join(get_repo_path(), 'io_config.yaml')
+    config_profile = 'default'
+
+    for key, value in data.items():
+        table_id = 'uber-data-eng-19sep2023.uber_de_dataset.{}'.format(key)
+        BigQuery.with_config(ConfigFileLoader(config_path, 
+                                              config_profile)).export(
+        DataFrame(value),
+        table_id,
+        if_exists = 'replace',  # Specify resolution policy if table name already exists
+    )
+```
 
 Once the pipeline is successfully executed, we can check the location of these dataframes into the data warehouse BigQuery:
 
@@ -235,7 +298,7 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
 We notice that we mainly have joined innerly the fact table to the rest of the dimensional tables as the [`data model`](https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8) states.
 
 Again, the purpose of this project wasn't to construct many series of queries but to showcase the main stages of a data pipeline using GCP. 
-You can see more query developement in other repos like in any of the [`SQL-weekly-challenges`](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/query_develop/dev_query_4_31AUG23.sql) I elaborated.
+You can see more query developement in other repos, i.e. any of the other [`SQL-weekly-challenges`](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/query_develop/dev_query_4_31AUG23.sql) I elaborated.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -246,6 +309,8 @@ After performing some quick work with Looker Studio, these are the dashboards we
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/c9b58269-741e-4a14-b202-d61a76bdf94e)
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/63b2f374-6f77-4eb5-b0cd-d618cfa15151)
+
+NB: Query for the `Average tip by trip distance` to be reviewed for their absolute values are too high.
 
 ![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/ec42e1e0-2f3e-48db-a187-f24675e9f979)
 

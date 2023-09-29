@@ -96,7 +96,7 @@ Before we store our data flat file into our Cloud Storage, we have to create our
 Once the object is uploaded, in the `Permissions tab`, we edit access control from `Uniform` to `Fine-grained`. 
 
 <p align="center">
-<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/1eca6e9b-beb1-4087-a747-b3d2a363c581"  width="40%" height="40%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/01d87bac-a777-4c73-a235-04c87f48bbc7"  width="40%" height="40%">
 
 
 Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the Computer Engine. To do that, we have to create an instance from within it. We need to select the nearest region again, the series and type of our VM as well:

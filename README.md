@@ -325,7 +325,7 @@ After performing some quick work with Looker Studio, these are the dashboards we
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/72df3de0-721c-4b5c-994b-633f750f322d)
 
 
-We can see in the bubble chart that some observations (water geolocations) needed to be removed as part of data cleaning. The scope of this project nonetheless was to showcase the End-to-End pipeline process of a Data Engineering project.
+We can see in the bubble chart that some observations (pick up geolocations in water spots) needed to be removed as part of data cleaning. To detect these prior to see them visualized can be tought to execute. The [`scope of this project`](#introduction) nonetheless was to showcase the End-to-End pipeline process of a Data Engineering project.
 
 
 [Back to Table of Contents](#table-of-contents)

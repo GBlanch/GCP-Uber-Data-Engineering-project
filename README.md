@@ -75,7 +75,7 @@ NB: Tables such as `passenger count ` or  `trip distance` would suit better to b
 The final diagram of the data model then results:
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8"  width="70%" height="60%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/1a920215-a8c6-48f5-b1e3-38c36b0ad6fb"  width="70%" height="60%">
 
 
 So now we’re ready to perform all the `cleaning and transformation` work before we deploy this code into Mage. The script with its explanation to the development of this code can be read [`here.`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb)
@@ -87,7 +87,8 @@ So now we’re ready to perform all the `cleaning and transformation` work befor
 Before we store our data flat file into our Cloud Storage, we have to create our Project and Bucket in GCS.
 
 <p align="center">
-<img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/a3802e5c-29ab-49e6-a1b9-76b2032c100d=150x50"  width="70%" height="60%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/e685b676-20df-47a2-935b-37959bf3d8e1"  width="70%" height="60%">
+
 
 <img src="https://github.com/GBlanch/Data-Engineering/assets/136500426/1967e5d9-6c86-4c0b-9c61-2908d776c0e5"  width="70%" height="60%">
 

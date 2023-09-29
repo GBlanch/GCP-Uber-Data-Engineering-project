@@ -319,10 +319,11 @@ After performing some quick work with Looker Studio, these are the dashboards we
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/23ec5683-1393-463f-989f-be3d9e043506)
 
 
-![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/9b808ea0-8a7e-4f72-9bd2-703b431d6492)
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/334edc21-e955-490a-a995-70afd5201ca2)
 
 
-![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/ea8e213a-d2de-4b1b-8667-8798e976fbb9)
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/72df3de0-721c-4b5c-994b-633f750f322d)
+
 
 
 

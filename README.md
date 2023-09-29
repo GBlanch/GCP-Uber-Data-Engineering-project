@@ -199,7 +199,7 @@ def test_output(output, *args) -> None:
 
 + Transform: [`uber_de_transform.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_transform.py)
   
-  We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/Data-Engineering/blob/main/1.Uber%20Data%20Pipeline/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
+  We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
 
 + Load:[`uber_de_load.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_load.py)
   
@@ -252,7 +252,8 @@ def export_data_to_big_query(data, **kwargs) -> None:
 
 Once the pipeline is successfully executed, we can check the location of these dataframes into the data warehouse BigQuery:
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/a78b369c-bb25-4c90-973f-830dbc05bc0e)
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/1e5dc6a6-66c6-4dcf-a0f9-93b3978f9d8a)
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -302,7 +303,7 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
   ;
 ```
 
-We notice that we mainly have joined innerly the fact table to the rest of the dimensional tables as the [`data model`](https://github.com/GBlanch/Data-Engineering/assets/136500426/fa3120af-3d6e-4b44-ac04-8f130a9cd8e8) states.
+We notice that we mainly have joined innerly the fact table to the rest of the dimensional tables as the [`data model`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/data%20model/Uber%20DE%20model.png) states.
 
 Again, the purpose of this project wasn't to construct many series of queries but to showcase the main stages of a data pipeline using GCP. 
 You can see more query developement in other repos, i.e. any of the other [`SQL-weekly-challenges`](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/query_develop/dev_query_4_31AUG23.sql) I elaborated.
@@ -313,13 +314,16 @@ You can see more query developement in other repos, i.e. any of the other [`SQL-
 
 After performing some quick work with Looker Studio, these are the dashboards we came up with:
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/c9b58269-741e-4a14-b202-d61a76bdf94e)
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/23ec5683-1393-463f-989f-be3d9e043506)
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/63b2f374-6f77-4eb5-b0cd-d618cfa15151)
+
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/f00b95ee-244a-4283-b4fd-03b49f7f0da3)
+
 
 NB: Query for the `Average tip by trip distance` to be reviewed for their absolute values are too high.
 
-![image](https://github.com/GBlanch/Data-Engineering/assets/136500426/ec42e1e0-2f3e-48db-a187-f24675e9f979)
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/2576c255-ef4e-4e48-b49f-8cb785cd730f)
+
 
 
 

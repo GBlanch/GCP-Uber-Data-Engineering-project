@@ -166,7 +166,7 @@ And so we have established the connection within mage from our VM.
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/ee2c157a-234b-4179-8752-6250f6b9255f" >
 
 
-+ Extract: [`uber_de_extract.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_extract.py)
++ Extract: [`uber_de_extract.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_extract.py)
 
 ```python
 import io
@@ -199,11 +199,18 @@ def test_output(output, *args) -> None:
   We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas 
   dataframe to be pulled from the bucket into this mage instance.
 
-+ Transform: [`uber_de_transform.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_transform.py)
++ Transform: [`uber_de_transform.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_transform.py)
++ <details>
+  <summary> View code here </summary>
+  ```python
+  wgregegr
+  ```
+
+</details>
   
   We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
 
-+ Load:[`uber_de_load.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/1.Uber%20Data%20Pipeline/orchestration/batch%20pipeline/uber_de_load.py)
++ Load:[`uber_de_load.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_load.py)
   
   First off, we need to install the Google Cloud Service packages into our VM:
 

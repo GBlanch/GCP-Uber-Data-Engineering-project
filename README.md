@@ -200,11 +200,7 @@ def test_output(output, *args) -> None:
   dataframe to be pulled from the bucket into this mage instance.
 
 + Transform: [`uber_de_transform.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_transform.py)
-+ <details>
-  <summary> View code here </summary>
-[`uber_de_transform.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_transform.py)
-  </details>
-  
+
   We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
 
 + Load:[`uber_de_load.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_load.py)

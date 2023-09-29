@@ -319,10 +319,8 @@ After performing some quick work with Looker Studio, these are the dashboards we
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/23ec5683-1393-463f-989f-be3d9e043506)
 
 
-![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/f00b95ee-244a-4283-b4fd-03b49f7f0da3)
+![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/2afaf669-496a-4b6a-8a2e-da23fc8a47b7)
 
-
-NB: Query for the `Average tip by trip distance` to be reviewed for their absolute values are too high.
 
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/2576c255-ef4e-4e48-b49f-8cb785cd730f)
 

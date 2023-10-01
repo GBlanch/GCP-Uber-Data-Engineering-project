@@ -61,7 +61,7 @@ We will also employ some `bash` code mostly to install some depencencies in our 
 + Analytics : `BigQuery`
 + Dashboarding :  `Looker Studio`  
 
-For orchestrating the ETL process, we will use `Mage` as an open-source, hybrid framework for transforming and integrating our dataframes.
+For orchestrating the `ETL process` in our Virtual Machine, we will use `Mage` as an open-source, hybrid framework for transforming and integrating our dataframes.
 
 [Back to Table of Contents](#table-of-contents)
 

@@ -46,7 +46,7 @@ Finally, Looker Studio will allow us to create some dashboards according to the 
 ### Coding:
 
 We will use `Python` within `Jupyer Notebook` as computing platform to arrange our fact and dimensional tables according to our data model.
-`Python` also will be used to modify the ETL blocks/instances in the orchestration stage.
+`Python` also will be used to modify the `ETL blocks/instances` in the orchestration stage.
 
 Once the dataframes are deployed into our data warehouse, we are going to code in `SQL` to fetch the tables we requiere. Likewise, we will elaborate the queries to select the information we want to display in the final dashboards. 
 
@@ -67,7 +67,7 @@ For orchestrating the ETL process, we will use `Mage` as an open-source, hybrid 
 
 ## Data Transformation and Modeling
 
-Once we’ve downloaded the csv file as mentioned above, we will need to convert our flat file into some fact and dimensional tables. The former ones will contain items with high cardinality or transaction values, whereas the latter ones will be assigned to merely descriptive values. More info on some concepts of dimensional data modeling can be found [here.](https://www.ibm.com/docs/en/informix-servers/14.10?topic=model-concepts-dimensional-data-modeling)
+Once we’ve downloaded the csv file as mentioned above, we will need to convert our `flat file` into some `fact` and `dimensional tables`. The former ones will contain items with high cardinality or transaction values, whereas the latter ones will be assigned to merely descriptive values. More info on some concepts of dimensional data modeling can be found [here.](https://www.ibm.com/docs/en/informix-servers/14.10?topic=model-concepts-dimensional-data-modeling)
 
 
 NB: Tables such as `passenger count ` or  `trip distance` would suit better to be created as fact tables - their values they keep varying- , but for the purpose on focusing on the ETL pipeline process we will create them as dimensional ones. 
@@ -84,7 +84,7 @@ So now we’re ready to perform all the `cleaning and transformation` work befor
 
 ## Data Storage and VM configuration
 
-Before we store our object / data flat file into our Cloud Storage, we have to create our Project and Bucket in GCS.
+Before we store our object / data flat file into our Cloud Storage, we have to create our `Project` and `Bucket` in GCS.
 
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/e685b676-20df-47a2-935b-37959bf3d8e1"  width="70%" height="60%">
@@ -99,7 +99,7 @@ Once the object is uploaded, in the `Permissions tab`, we edit access control fr
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/01d87bac-a777-4c73-a235-04c87f48bbc7"  width="40%" height="40%">
 
 
-Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the Computer Engine. To do that, we have to create an instance from within it. We need to select the nearest region again, the series and type of our VM as well:
+Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the `Computer Engine`. To do that, we have to `create an instance` from within our `Cloud console`. We need to select the nearest region again, the series and type of our VM as well:
 
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/fd808491-d4dd-41c5-808d-574824eb8fc3)
 
@@ -107,8 +107,8 @@ Then we go to the object and we add an entry within the `Edit Access` option so 
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/102b3c44-ce1b-497c-8ca0-8aa2ee8df190" width="70%" height="70%">
 
-On the firewall section, we must allow HTTP and HTTPS traffic so that we can access it once we deploy our code.
-Once the instance is created, to connect to it we just need to directly run the SSH-in-browser without the requisite of downloading any SSH keys.
+On the `Firewall section`, we must `allow HTTP` and `HTTPS traffic` so that we can access it once we deploy our code.
+Once the instance is created, to connect to it we just need to directly run the `SSH-in-browser` without the requisite of downloading any SSH keys.
 
 Once we’re connected to the virtual machine, we run some `bash commands` to set up the proper environment. These are:
 
@@ -146,7 +146,7 @@ Then we set up Mage in our virtual machine and start our project:
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/6bc7d16f-6bd7-46ea-a140-7587914c1703" >
 
-We can see at the last line that it is running on the indicated local host 6789. To allow our instance to accept requests from this mentioned port, we need to create a new Firewall Rule :
+We can see at the last line that it is running on the indicated local host 6789. To allow our instance to accept requests from this mentioned port, we need to create a new `Firewall Rule`:
 
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/190b752a-40bb-420a-a47d-eab7492d2929"  width="90%" height="90%">
@@ -156,7 +156,7 @@ We can see at the last line that it is running on the indicated local host 6789.
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/f96304b4-7104-4833-a4ff-e9533b576308">
 
 
-And so we have established the connection within mage from our VM.
+And so we have already established the connection within mage from our VM.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -196,12 +196,12 @@ def test_output(output, *args) -> None:
     """
     assert output is not None, 'The output is undefined'
  ```
-  We pass the URL stored in our bucket so that it directly extracts data from there.  That will allow the pandas 
-  dataframe to be pulled from the bucket into this mage instance.
+  We `pass the URL` stored in our bucket so that it directly extracts data from there.  That will allow the Pandas 
+  dataframes to be pulled from the bucket into this mage instance.
 
 + Transform: [`uber_de_transform.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_transform.py)
 
-  We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using Jupyer Notebooks.
+  We first import pandas in this instance as well. Next, we insert the [`cleaning and transformation code`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb) we developed in our LM previously using `Jupyer Notebooks`.
 
 + Load:[`uber_de_load.py`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/orchestration/batch%20pipeline/uber_de_load.py)
   
@@ -214,9 +214,9 @@ def test_output(output, *args) -> None:
     	sudo pip3 install google-cloud-bigquery
  
     Then we will need to create an access key so that we can pass the credentials into the default yaml file in the Load block. This key can be 
-    downloaded to our LM in json format from the API & Services section in our Google console.
+    downloaded to our LM in json format from the `API & Services` section in our Google console.
   
-  Once the credentials are passed into our Load block in Mage, we create a dataset location within BigQuery. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
+  Once the credentials are passed into our Load block in Mage, we create a `Dataset location` within `BigQuery`. Besides allowing BigQuery to locate the dataframes to be received, this will also allow Mage to acknowledge the destination  of these.
 
 ```python
 from mage_ai.settings.repo import get_repo_path
@@ -252,7 +252,7 @@ def export_data_to_big_query(data, **kwargs) -> None:
     )
 ```
 
-Once the pipeline is successfully executed, we can check the location of these dataframes into the data warehouse BigQuery:
+Once the pipeline is successfully executed, we can check the location of these dataframes into the `Data Warehouse` in BigQuery:
 
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/1e5dc6a6-66c6-4dcf-a0f9-93b3978f9d8a)
 
@@ -261,10 +261,10 @@ Once the pipeline is successfully executed, we can check the location of these d
 
 ## Data Analysis
 
-Despite the Data Eng. work has been mostly finalized, we proceed to perform some Data Analysis. 
+Despite the Data Eng. work has been mostly finalized, we proceed to perform some `Data Analysis`. 
 For doing this, we will only pull the columns we want to include in our dashboards by creating specific queries. 
 
-Hence, our new table or 'analytical layer' from which we will build our dashboard is the following:
+Hence, our new table or `analytical layer` from which we will build our dashboard is the following:
 
 ```SQL 
 CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table` AS (
@@ -308,13 +308,13 @@ CREATE OR REPLACE TABLE `uber-data-eng-19sep2023.uber_de_dataset.analytics_table
 We notice that we mainly have joined innerly the fact table to the rest of the dimensional tables as the [`data model`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/data%20model/Uber%20DE%20model.png) states.
 
 Again, the purpose of this project wasn't to construct many series of queries but to showcase the main stages of a data pipeline using GCP. 
-You can see more query developement in other repos, i.e. any of the other [`SQL-weekly-challenges`](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/query_develop/dev_query_4_31AUG23.sql) I elaborated.
+You can see more `query developement` in other repos, i.e. any of the other [`SQL-weekly-challenges`](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/query_develop/dev_query_4_31AUG23.sql) I elaborated.
 
 [Back to Table of Contents](#table-of-contents)
 
 ## Dashboarding
 
-After performing some quick work with Looker Studio, these are the dashboards we came up with:
+After performing some quick work with `Looker Studio`, these are the dashboards I came up with:
 
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/23ec5683-1393-463f-989f-be3d9e043506)
 

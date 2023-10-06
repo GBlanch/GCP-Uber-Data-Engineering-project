@@ -85,11 +85,10 @@ So now we’re ready to perform all the `cleaning and transformation` work befor
 ## Data Storage and VM configuration
 
 Before we store our object / data flat file into our Cloud Storage, we have to create our `Project` and `Bucket` in GCS.
+Then we can store our object in this new bucket:
 
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/e685b676-20df-47a2-935b-37959bf3d8e1"  width="75%" height="75%">
-
-Then we can store our object in this new bucket:
 
 ![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/42f5fe80-59a0-4edc-8eb9-5bd2590bbd91)
 

@@ -40,6 +40,8 @@ Once the data is exported, we can start querying the parameters and variables we
 Finally, Looker Studio will allow us to create some dashboards according to the queries we have prepared before.
 
 [Back to Table of Contents](#table-of-contents)
+&nbsp;    
+&nbsp;  
 
 ## Code and Services utilized
 
@@ -64,6 +66,8 @@ We will also employ some `bash` code mostly to install some depencencies in our 
 For orchestrating the `ETL process` in our Virtual Machine, we will use `Mage` as an open-source, hybrid framework for transforming and integrating our dataframes.
 
 [Back to Table of Contents](#table-of-contents)
+&nbsp;    
+&nbsp;  
 
 ## Data Transformation and Modeling
 
@@ -81,6 +85,8 @@ The final diagram of the data model then results:
 So now we’re ready to perform all the `cleaning and transformation` work before we deploy this code into Mage. The script with its explanation to the development of this code can be read [`here.`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb)
 
 [Back to Table of Contents](#table-of-contents)
+&nbsp;    
+&nbsp;  
 
 ## Data Storage and VM configuration
 
@@ -158,6 +164,8 @@ We can see at the last line that it is running on the indicated local host 6789.
 And so we have already established the connection within mage from our VM.
 
 [Back to Table of Contents](#table-of-contents)
+&nbsp;    
+&nbsp;  
 
 ## ETL Orchestration
 
@@ -257,6 +265,8 @@ Once the pipeline is successfully executed, we can check the location of these d
 
 
 [Back to Table of Contents](#table-of-contents)
+&nbsp;    
+&nbsp;  
 
 ## Data Analysis
 
@@ -310,6 +320,8 @@ Again, the purpose of this project wasn't to construct many series of queries bu
 You can see more `query developement` in other repos, i.e. any of the other [`SQL-weekly-challenges`](https://github.com/GBlanch/SQL-weekly-challenges/blob/main/4.Data%20bank/query_develop/dev_query_4_31AUG23.sql) I elaborated.
 
 [Back to Table of Contents](#table-of-contents)
+&nbsp;    
+&nbsp;  
 
 ## Dashboarding
 

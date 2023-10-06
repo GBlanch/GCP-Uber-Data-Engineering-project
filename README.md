@@ -36,7 +36,7 @@ Once the data modeling is done, we will perform the cleaning and transformation 
 
 After this, we can store our data flat file in our Cloud Storage and also start setting up all the Cloud services to be used. 
 
-Next, we will be ready to deploy this code into our open-source data pipeline tool Mage. After we’ve created the main ETL batch pipeline in Mage, we will orchestrate it using our IaaS Computer Engine (VM). This will allow us to export our dataframes into our data warehouse in BigQuery.
+Next, we will be ready to deploy this code into our open-source data pipeline tool Mage. After we’ve created the main ETL batch pipeline in Mage, we will orchestrate it using a Virtual Machine within GCE. This will also allow us to export our dataframes into our data warehouse in BigQuery further on.
 
 Once the data is exported, we can start querying the parameters and variables we want to display into our reports/dashboards further on.
 

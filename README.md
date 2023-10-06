@@ -99,7 +99,8 @@ Then we can store our object in this new bucket:
 <p align="center">
 <img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/e685b676-20df-47a2-935b-37959bf3d8e1"  width="75%" height="75%">
 
-![image](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/42f5fe80-59a0-4edc-8eb9-5bd2590bbd91)
+<p align="center">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/42f5fe80-59a0-4edc-8eb9-5bd2590bbd91"  width="75%" height="75%">
 
 Once the object is uploaded, in the `Permissions tab`, we edit access control from `Uniform` to `Fine-grained`. 
 

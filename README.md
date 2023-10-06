@@ -75,7 +75,7 @@ NB: Tables such as `passenger count ` or  `trip distance` would suit better to b
 The final diagram of the data model then results:
 
 <p align="center">
-<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/1a920215-a8c6-48f5-b1e3-38c36b0ad6fb"  width="70%" height="60%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/1a920215-a8c6-48f5-b1e3-38c36b0ad6fb"  width="90%" height="90%">
 
 
 So now we’re ready to perform all the `cleaning and transformation` work before we deploy this code into Mage. The script with its explanation to the development of this code can be read [`here.`](https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/blob/main/Uber%20DE%20Transform%20and%20Model%20(LM).ipynb)

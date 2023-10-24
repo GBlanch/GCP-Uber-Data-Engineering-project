@@ -97,15 +97,15 @@ Before we store our object / data flat file into our Cloud Storage, we have to c
 Then we can store our object in this new bucket:
 
 <p align="center">
-<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/e685b676-20df-47a2-935b-37959bf3d8e1"  width="75%" height="75%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/e685b676-20df-47a2-935b-37959bf3d8e1"  width="88%" height="88%">
 
 <p align="center">
-<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/42f5fe80-59a0-4edc-8eb9-5bd2590bbd91"  width="75%" height="75%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/42f5fe80-59a0-4edc-8eb9-5bd2590bbd91"  width="88%" height="88%">
 
 Once the object is uploaded, in the `Permissions tab`, we edit access control from `Uniform` to `Fine-grained`. 
 
 <p align="center">
-<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/01d87bac-a777-4c73-a235-04c87f48bbc7"  width="40%" height="40%">
+<img src="https://github.com/GBlanch/GCP-Uber-Data-Engineering-project/assets/136500426/01d87bac-a777-4c73-a235-04c87f48bbc7"  width="70%" height="70%">
 
 
 Then we go to the object and we add an entry within the `Edit Access` option so that we generate a pubic URL for this object. The next step is to set up the `Computer Engine`. To do that, we have to `create an instance` from within our `Cloud console`. We need to select the nearest region again, the series and type of our VM as well:
